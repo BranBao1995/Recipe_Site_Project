@@ -1,0 +1,116 @@
+
+@import "../abstracts/variables";
+// @import "../base/animations";
+
+.jumbotron {
+
+    grid-row: jumbotron-start / jumbotron-end;
+    grid-column: sidebar-start / full-end;
+
+    z-index: 10;
+
+    display: grid;
+
+    grid-template-rows: 70% 30%;
+    grid-template-columns: minmax(min-content, max-content);
+
+    justify-content: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        grid-column: full-start / full-end;
+
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../../images/food_jumbotron.jpg);
+        background-size: cover;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+    }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+
+        display: grid;
+        grid-template-rows: max-content;
+        grid-template-columns: minmax(min-content, max-content);
+
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    &__text {
+
+        grid-row: 1 / 2;
+        align-self: center;
+
+    }
+
+    &__header {
+
+        text-align: center;
+        padding-bottom: 1.5rem;
+
+        animation-name: move-in-left;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+
+        backface-visibility: hidden;
+
+        @media only screen and (max-width: $breakpoint-smallest) {
+
+            margin-bottom: 3rem;
+    
+        }
+
+    }
+
+    &__description {
+
+        text-align: center;
+
+        // border-top: 1px solid $color-dark-grey;
+        padding-top: 1.5rem;
+
+        animation-name: move-in-right;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+
+        backface-visibility: hidden;
+
+    }
+
+    &__buttons {
+        grid-row: 2 / -1;
+
+        display: flex;
+
+        justify-content: space-around;
+        align-items: start;
+
+
+        animation-name: move-in-bottom;
+        animation-duration: 1.5s;
+
+
+        backface-visibility: hidden;
+
+        @media only screen and (max-width: $breakpoint-smallest) {
+
+            display: none;
+
+        }
+    }
+
+}
+
+// .cover {
+
+//     width: 100%;
+//     height: 100%;
+
+//     object-fit: cover;
+
+// }

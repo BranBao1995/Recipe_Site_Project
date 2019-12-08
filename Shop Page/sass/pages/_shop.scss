@@ -1,0 +1,739 @@
+
+@import "../base/animations";
+
+.content {
+
+    background-color: $color-primary;
+
+    grid-column: full-start / full-end;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: [full-start] repeat(12, minmax(min-content, 1fr)) [full-end];
+    align-items: flex-start;
+
+}
+
+.list__list {
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+
+    margin: 2rem 2rem;
+    background-color: $color-light-grey;
+    box-shadow: 0rem 1rem 1rem rgba($color-black, .2);
+
+    @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+        margin: 2rem 1rem;
+
+    }
+
+    @media only screen and (max-width: 41.625em) {
+
+        grid-row: 2 / 3;
+        grid-column: 2 / 6;
+
+    }
+
+}
+
+.list__results {
+
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+
+
+    list-style: none;
+
+}
+
+.list__loader {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3rem 0;
+
+    &__icon {
+
+        display: block;
+        width: 7rem;
+        height: 7rem;
+
+        fill: $color-dark-primary;
+
+        animation: loaderSpin 1.5s infinite linear;
+
+    }
+
+}
+
+.list__element {
+
+    display: block;
+    width: 100%;
+
+    &:first-child {
+
+        margin-top: 3rem;
+
+    }
+
+}
+
+.list__result {
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem 2rem;
+
+    transition: all .1s;
+
+    &,
+    &:link,
+    &:visited {
+
+        text-decoration: none;
+
+    }
+
+
+    &__thumbnail {
+
+        display: block;
+        width: 6rem;
+        height: 6rem;
+    
+        margin-right: 2rem;    
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            width: 4rem;
+            height: 4rem;
+
+        }
+
+    }
+
+    &__image {
+
+        display: block;
+        width: 6rem;
+        height: 6rem;
+        border: none;
+        border-radius: 50%;
+
+        object-fit: cover;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            width: 4rem;
+            height: 4rem;
+
+        }
+
+    }
+
+    &__info {
+
+
+
+    }
+
+    &__heading {
+
+        padding-bottom: 1rem;
+
+    }
+
+    &__text {
+
+
+    }
+
+    &:hover {
+
+        background-color: rgba($color-primary, .2);
+
+    }
+
+}
+
+
+.list__buttons {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem 0;
+    margin: 3rem 0;
+
+    @media only screen and (max-width: $breakpoint-large) {
+
+
+
+    }
+
+}
+
+.list__button {
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+
+}
+
+
+.list__content {
+
+    background-color: $color-light-grey;
+    box-shadow: 0rem 1rem 1rem rgba($color-black, .2);
+    margin: 2rem 0;
+
+    grid-row: 1 / 2;
+    grid-column: 4 / 10;
+
+    display: grid;
+    grid-row-gap: 4rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+        grid-row-gap: 2rem;
+
+    }
+
+    @media only screen and (max-width: 41.625em) {
+
+        grid-row: 1 / 2;
+        grid-column: 2 / 12;
+
+    }
+
+    &__figure {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        box-shadow: 0rem 1rem 2rem rgba($color-black, .2);
+
+        position: relative;
+
+        &::before {
+
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right bottom, $color-primary, $color-primary);
+            opacity: .6;
+
+        }
+
+    }
+
+    &__image {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+
+    }
+
+    &__title {
+
+        display: block;
+        width: 70%;
+        padding: 1.5rem .8rem;
+        text-align: center;
+        background-color: $color-dark-primary;
+        box-shadow: 0rem 1rem 2rem rgba($color-black, .2);
+        transform: skewY(-6deg);
+        margin-top: -14rem;
+
+        @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+            width: 60%;
+            margin-top: -9rem;
+
+        }
+    }
+
+    &__servings {
+
+        width: 90%;
+        padding-top: 2rem;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+            padding-top: 0;
+        }
+
+        &__count {
+
+            margin-right: .8rem;
+
+        }
+
+
+        &__button {
+
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            background-color: $color-light-grey;
+            border: none;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+
+                transform: translateY(-1rem);
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+
+    }
+
+    &__main {
+
+        display: grid;
+        justify-items: center;
+
+        max-width: 100%;
+        background-color: #ededed;
+
+    }
+
+    &__ingredients {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5rem;
+        grid-row-gap: 3rem;
+
+        padding: 4rem 5rem;
+
+    }
+
+    &__ingredient {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+
+        position: relative;
+
+        &__svg {
+
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+
+            margin-right: 1.2rem;
+
+            position: absolute;
+            left: 0;
+            top: 1rem;
+
+        }
+
+        &__count {
+
+            display: flex;
+            justify-content: space-between;
+
+            margin-right: .4rem;
+
+        }
+
+        &__content {
+
+
+
+        }
+
+    }
+
+    &__add {
+
+        margin-bottom: 3rem;
+
+        &__button {
+
+            display: block;
+
+        }
+
+
+    }
+
+}
+
+.list__shoppingCart {
+
+    z-index: 50;
+
+    grid-row: 1 / 2;
+    grid-column: 10 / 13;
+
+    display: grid;
+
+
+    margin: 2rem 2rem;
+    background-color: $color-light-grey;
+    box-shadow: 0rem 1rem 1rem rgba($color-black, .2);
+
+    @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+
+        margin: 2rem 1rem;
+
+    }
+
+    @media only screen and (max-width: 41.625em) {
+
+        grid-row: 2 / 3;
+        grid-column: 8 / 12;
+
+    }
+
+    &__list {
+
+        max-width: 100%;
+        margin: 2rem 2rem;
+        list-style: none;
+        background-color: white;
+
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 1rem;
+
+        position: relative;
+
+        &:hover &__button {
+
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+        &__count {
+
+            display: flex;
+            align-items: flex-start;
+            margin-right: .7rem;
+
+            input {
+
+                display: inline-block;
+                width: 4rem;
+                margin-right: .7rem;
+                background-color: $color-light-grey;
+                border: none;
+                border-radius: 3px;
+                padding: .3rem;
+
+                @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+                    font-size: 1rem;
+        
+                }
+
+                &:focus {
+                    outline: none;
+                    background-color: white;
+                    border: solid;
+                    border-color: $color-dark-grey;
+                    border-width: 1px;
+                }
+
+            }
+
+            p {
+
+                font-size: 1.2rem;
+                font-family: $font-style-3;
+                font-weight: $font-weight-lightest;
+                color: $color-darkest-grey;
+
+            }
+
+        }
+
+        &__description {
+
+            font-size: 1.2rem;
+            font-family: $font-style-3;
+            font-weight: $font-weight-lightest;
+            color: $color-darkest-grey;
+
+            margin-right: 1.5rem;
+
+        }
+
+        &__button {
+
+            position: absolute;
+            right: 0;
+    
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            margin-right: .4rem;
+            background-color: white;
+            border: none;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+            transition: all .1s;
+
+        }
+
+    }
+
+    &__greetings {
+
+        display: grid;
+        grid-row-gap: 2rem;
+
+        padding: 2rem 2rem;
+
+
+        &__heading {
+
+
+        }
+
+        &__login {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__text {
+
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+                margin-right: 0;
+    
+            }
+
+            @media only screen and (max-width: 41.625em) {
+
+                margin-right: 2rem;
+        
+            }
+
+        }
+
+        &__button {
+
+
+        }
+
+    }
+
+    &__message {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0;
+
+    }
+
+    &__checkout {
+
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 3rem;
+
+    }
+
+}
+
+
+.list__liked {
+
+    grid-row: 1 / 2;
+    grid-column: 10 / 13;
+
+    margin: 2rem 2rem;
+    background-color: $color-light-grey;
+    box-shadow: 0rem 1rem 1rem rgba($color-black, .2);
+
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+    @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+
+        margin: 2rem 1rem;
+
+    }
+
+    @media only screen and (max-width: 41.625em) {
+
+        grid-row: 2 / 3;
+        grid-column: 8 / 12;
+
+    }
+
+    &__list {
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1.5rem;
+        justify-content: center;
+        justify-items: center;
+
+
+        list-style: none;
+
+
+    }
+
+    &__element {
+
+        display: block;
+        width: 100%;
+
+        &:first-child {
+
+            margin-top: 3rem;
+
+        }
+
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        padding: 1rem 2rem;
+
+        transition: all .1s;
+
+        &,
+        &:link,
+        &:visited {
+
+            text-decoration: none;
+
+        }
+
+
+        &__thumbnail {
+
+            display: block;
+            width: 6rem;
+            height: 6rem;
+        
+            margin-right: 2rem;    
+
+            @media only screen and (max-width: $breakpoint-medium) {
+
+                width: 4rem;
+                height: 4rem;
+    
+            }
+
+        }
+
+        &__image {
+
+            display: block;
+            width: 6rem;
+            height: 6rem;
+            border: none;
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            @media only screen and (max-width: $breakpoint-medium) {
+
+                width: 4rem;
+                height: 4rem;
+    
+            }
+
+        }
+
+        &__info {
+
+
+
+        }
+
+        &__heading {
+
+            padding-bottom: 1rem;
+
+        }
+
+        &__text {
+
+
+        }
+
+        &:hover {
+
+            background-color: rgba($color-primary, .2);
+
+        }
+
+    }
+
+}
+
+
+.highlight {
+
+    background-color: rgba($color-primary, .2);
+
+}

@@ -1,0 +1,251 @@
+
+@import "../abstracts/variables";
+
+.header {
+
+    &--nav {
+        text-decoration: none;
+        color: $color-black;
+        font-size: $font-size-nav;
+    }
+
+    &--jumbotron {
+        font-size: $font-size-largest;
+        color: $color-black;
+        font-family: $font-style-1;
+    }
+
+    &--info {
+        font-size: $font-size-largest;
+        color: $color-secondary;
+        font-family: $font-style-2;
+    }
+
+    &--gallery {
+
+        font-size: $font-size-largest;
+        color: $color-primary;
+        font-family: $font-style-2;
+
+    }
+
+    &--signup {
+
+        font-size: $font-size-medium;
+        color: $color-black;
+        font-family: $font-style-2;
+
+        @media only screen and (max-width: $breakpoint-small) {
+
+            font-size: 2.75rem;
+
+        }
+
+    }
+
+    &--gallery__popup {
+
+        font-size: 5rem;
+        color: $color-dark-secondary;
+        font-family: $font-style-2;
+
+    }
+
+    &--login {
+
+        font-size: $font-size-medium;
+        color: $color-black;
+        font-family: $font-style-2;
+
+    }
+
+    &--results {
+
+        font-size: 1.8rem;
+        color: $color-dark-primary;
+        font-family: $font-style-3;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            font-size: 1.4rem;
+
+        }
+
+    }
+
+    &--list__content {
+
+        font-size: $font-size-small;
+        color: white;
+        font-family: $font-style-2;
+
+    }
+
+    &--shoppingCart {
+
+        font-size: $font-size-small;
+        color: $color-dark-primary;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+
+    }
+
+    &--likedItem {
+
+        font-size: 1.8rem;
+        color: $color-dark-primary;
+        font-family: $font-style-3;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            font-size: 1.4rem;
+
+        }
+
+    }
+
+}
+
+.text {
+
+    &--jumbotron {
+        font-size: $font-size-medium;
+        font-family: $font-style-2;
+        font-weight: $font-weight-medium;
+        color: $color-dark-primary;
+
+        @media only screen and (max-width: $breakpoint-small) {
+
+            font-size: 2.75rem;
+
+        }
+    }
+
+    &--info {
+        font-size: $font-size-small;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+        color: $color-darkest-grey;
+    }
+
+    &--gallery {
+
+        font-size: $font-size-small;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+        color: $color-darkest-grey;
+
+    }
+
+    &--signup {
+
+        font-size: $font-size-smallest;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+        color: $color-darkest-grey;
+
+    }
+
+    &--gallery__popup {
+
+        font-size: $font-size-smallest;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+        color: $color-darkest-grey;
+
+    }
+
+    &--login {
+
+        font-size: $font-size-medium;
+        font-family: $font-style-2;
+        color: $color-black;
+
+    }
+
+    &--searchbar {
+
+
+        font-size: $font-size-smallest;
+        color: $color-darkest-grey;
+        font-family: $font-style-3;
+
+    }
+
+    &--results {
+
+        font-size: $font-size-smallest;
+        color: $color-darkest-grey;
+        font-family: $font-style-3;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+    &--servings {
+
+        font-size: $font-size-small;
+        color: $color-secondary;
+        font-family: $font-style-2;
+
+    }
+
+    &--ingredients {
+
+        font-size: $font-size-smallest;
+        color: $color-darkest-grey;
+        font-family: $font-style-3;
+
+    }
+
+    &--shoppingCart {
+
+        font-size: $font-size-smallest;
+        color: $color-black;
+        font-family: $font-style-3;
+        font-weight: $font-weight-light;
+
+        @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+    &--shopMessage {
+
+        padding: 2rem;
+        font-size: $font-size-small;
+        font-family: $font-style-3;
+        font-weight: $font-weight-medium;
+        color: $color-dark-grey;
+        text-align: center;
+
+        @media only screen and (max-width: $breakpoint-shopPage-medium) {
+
+            font-size: $font-size-smallest;
+
+        }
+
+    }
+
+    &--likedItem {
+
+        font-size: $font-size-smallest;
+        color: $color-darkest-grey;
+        font-family: $font-style-3;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+}

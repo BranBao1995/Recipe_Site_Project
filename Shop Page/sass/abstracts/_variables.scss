@@ -1,0 +1,44 @@
+
+// font sizes
+
+$font-size-nav: 3rem;
+$font-size-largest: 7.5rem;
+$font-size-large: 6rem;
+$font-size-medium: 3.5rem;
+$font-size-small: 2rem;
+$font-size-smallest: 1.5rem;
+
+// font weights
+
+$font-weight-heavy: 700;
+$font-weight-medium: 600;
+$font-weight-light: 400;
+$font-weight-lightest: 300;
+
+// font styles
+
+$font-style-1: 'bonbon', cursive;
+$font-style-2: 'Indie Flower', cursive;
+$font-style-3: 'Raleway', sans-serif;
+
+// theme colors
+// backup color-primary: #fac57a
+$color-primary: #ffd9a3;
+$color-dark-primary: #fac57a;
+$color-secondary: #8be368;
+$color-dark-secondary: #2abd28;
+$color-tertiary: #101d2c;
+$color-light-grey: #f9f7f6;
+$color-dark-grey: #b6b6b8;
+$color-darkest-grey: #615e5e;
+$color-black: black;
+$color-red: red;
+
+
+// Responsive design breakpoints
+
+$breakpoint-large: 64em;
+$breakpoint-medium: 49.9em;
+$breakpoint-small: 35.5em;
+$breakpoint-smallest: 26em;
+$breakpoint-shopPage-medium: 43.75em;

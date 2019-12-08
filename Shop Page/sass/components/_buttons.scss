@@ -1,0 +1,400 @@
+
+@import "../abstracts/variables";
+
+.button {
+
+    &__primary,
+    &__primary:link,
+    &__primary:visited {
+
+        height: 7rem;
+        width: 17rem;
+
+        padding: 2rem 1rem;
+        border: none;
+        border-radius: 10rem;
+        font-family: $font-style-2;
+        font-size: $font-size-small;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+
+        position: relative;
+        transition: all .2s;
+        cursor: pointer;
+
+
+    }
+
+    &__primary {
+
+
+        &--1 {
+            background-color: $color-primary;
+
+            &::after {
+                background-color: $color-primary;
+            }
+
+        }
+
+        &--2 {
+            background-color: $color-secondary;
+
+            &::after {
+                background-color: $color-secondary;
+            }
+
+        }
+
+        &:hover {
+
+            transform: translateY(-.4rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            &::after {
+
+                transform: scaleY(1.4) scaleX(1.6);
+                opacity: 0;
+
+            }
+
+        }
+
+        &:active,
+        &:focus {
+
+            outline: none;
+            transform: translateY(.2rem);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+        }
+
+        &::after {
+
+            content: "";
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            transition: all .4s;
+
+        }
+
+    }
+
+
+    &__form,
+    &__form:link,
+    &__form:visited {
+
+        height: 5rem;
+        width: 15rem;
+
+        padding: 1rem 1rem;
+        border: none;
+        border-radius: 10rem;
+        font-family: $font-style-3;
+        font-size: $font-size-smallest;
+        color: $color-black;
+        background-color: white;
+        text-decoration: none;
+        text-align: center;
+
+        transition: all .2s;
+        cursor: pointer;
+    }
+
+    &__form {
+
+        &:hover {
+
+            transform: translateY(-.4rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+
+        }
+
+        &:active,
+        &:focus {
+
+            outline: none;
+            transform: translateY(.2rem);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+        }
+
+
+    }
+
+    &__gallery {
+
+        &,
+        &:link,
+        &:visited {
+
+
+            text-decoration: none;
+        
+
+        }
+
+
+    }
+
+
+}
+
+
+.gallery__popup__close {
+
+    &,
+    &:link,
+    &:visited {
+
+        width: 3rem;
+        height: 3rem;
+
+        display: block;
+
+        text-decoration: none;
+        color: $color-darkest-grey;
+
+        transition: all .2s;
+
+    }
+
+    &:hover {
+
+        transform: translateY(.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    }
+
+
+
+    
+            
+    &__button {
+
+        width: 3rem;
+        height: 3rem;
+
+        display: block;
+
+    }
+
+
+}
+
+
+.button--join {
+
+    &,
+    &:link,
+    &:visited {
+
+        text-decoration: none;
+
+        height: 5rem;
+        width: 15rem;
+
+        padding: 1.5rem 1rem;
+        border: none;
+        border-radius: 10rem;
+        font-family: $font-style-3;
+        font-size: $font-size-smallest;
+        background-color: $color-primary;
+        color: white;
+        text-align: center;
+
+        transition: all .2s;
+        cursor: pointer;
+
+
+    }
+
+    &:hover {
+
+        transform: translateY(-.4rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+
+    }
+
+    &:active,
+    &:focus {
+
+        outline: none;
+        transform: translateY(.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+    }
+    
+}
+
+.button--list {
+
+    display: block;
+    width: 10rem;
+    height: 4rem;;
+
+    background-color: $color-primary;
+    border: none;
+    border-radius: 25px;
+
+    color: $color-darkest-grey;
+    font-size: $font-size-smallest;
+    font-family: $font-style-3;
+    font-weight: $font-weight-light;
+
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+
+        transform: translateY(-.4rem);
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+
+    }
+
+    &:active,
+    &:focus {
+
+        outline: none;
+        transform: translateY(.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+    }
+
+    @media only screen and (max-width: $breakpoint-large) {
+
+        width: 6rem;
+        height: 3rem;
+        font-size: 1.1rem;
+
+    }
+
+}
+
+.button--heart {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $color-primary;
+
+}
+
+.button--heart--liked {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $color-secondary;
+
+}
+
+.button--addToCart {
+
+    width: 19rem;
+    height: 5rem;
+
+    background-color: $color-primary;
+    border: none;
+    border-radius: 25px;
+
+    font-size: $font-size-small;
+    color: $color-light-grey;
+    font-family: $font-style-3;
+
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+
+        transform: translateY(-.4rem);
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+
+    }
+
+    &:active,
+    &:focus {
+
+        outline: none;
+        transform: translateY(.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+    }
+
+}
+
+.button--shopItem {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $color-dark-primary;
+
+}
+
+
+.button--checkout {
+
+    width: 18rem;
+    height: 5rem;
+
+    padding: .8rem .8rem;
+
+    background-color: $color-secondary;
+    border: none;
+    border-radius: 25px;
+
+    font-size: $font-size-small;
+    color: $color-light-grey;
+    font-family: $font-style-3;
+
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+
+        transform: translateY(-.4rem);
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+
+    }
+
+    &:active,
+    &:focus {
+
+        outline: none;
+        transform: translateY(.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+    }    
+
+    @media only screen and (max-width: $breakpoint-large) {
+
+        width: 14rem;
+        height: 5rem;
+        font-size: $font-size-smallest;
+
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.2rem;
+        padding: .5rem .5rem;
+
+    }
+
+}

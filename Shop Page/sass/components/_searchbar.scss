@@ -1,0 +1,48 @@
+
+.search--nav {
+
+    grid-column: 3 / 5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    &__button {
+
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-left: -5rem;
+
+        background-color: white;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    &__search {
+
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: auto auto;
+        color: $color-dark-grey;
+
+    }
+
+    &__input {
+
+        display: inline-block;
+        width: 90%;
+
+        border: none;
+        border-radius: 25px;
+        padding: 1.8rem;
+
+        box-shadow: 1rem .5rem .5rem rgba($color-primary, .3);
+
+    }
+
+
+}

@@ -1,0 +1,61 @@
+
+.signup {
+
+    background-color: $color-primary;
+
+
+    grid-row: signup-start / signup-end;
+    grid-column: sidebar-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+
+    justify-items: center;
+    align-items: center;
+
+
+
+    &__form {
+
+        margin: 3rem 0;
+        background-color: $color-primary;
+        padding: 3rem 2.5rem;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+
+            margin: 3rem 0;
+            margin-left: 3.5rem;
+            background-color: $color-primary;
+    
+        }
+
+        @media only screen and (max-width: $breakpoint-small) {
+
+            margin: 3rem 1.74rem;
+            margin-bottom: 0;
+
+        }
+
+    }
+
+    &__paragraph {
+
+        margin: 1rem 0;
+        display: grid;
+
+        grid-template-rows: repeat(2, 37.5rem);
+
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    &__heading {
+
+        margin-bottom: 3.5rem;
+
+    }
+
+}
+
+

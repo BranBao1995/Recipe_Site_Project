@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Bonbon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>El Culina</title>
+</head>
+<body class="container">
+
+
+        <nav class="nav">
+
+            <a href="#" class="nav__logo header--nav">El Culina</a>
+        
+            <ul class="nav__items">
+
+                <li class="nav__item"><a href="#signup" class="nav__link">Sign Up</a></li>
+                <li class="nav__item"><a href="../Login Page/dist/index.html" class="nav__link">Log In</a></li>
+
+            </ul>
+
+        </nav>
+
+        <nav class="sidenav">
+
+            <input type="checkbox" class="sidenav__checkbox" id="sidenav__toggle">
+            <label for="sidenav__toggle" class="sidenav__button">
+                <span class="sidenav__button__icon">&nbsp;</span>
+            </label>
+
+            <div class="sidenav__background">&nbsp;</div>
+
+            <div class="sidenav__nav">
+
+                <ul class="sidenav__list">
+                    <li class="sidenav__item"><a href="#" class="sidenav__link">Find Out More</a></li>
+                    <li class="sidenav__item"><a href="#" class="sidenav__link">Gallery</a></li>
+                    <li class="sidenav__item"><a href="#" class="sidenav__link">Sign Up</a></li>
+                    <li class="sidenav__item"><a href="#" class="sidenav__link">Log In</a></li>
+                </ul>
+
+            </div>
+
+
+        </nav>
+
+
+        <section class="jumbotron">
+            
+            <div class="jumbotron__text">
+                <h1 class="jumbotron__header header--jumbotron">El Culina</h1>
+                <h2 class="jumbotron__description text--jumbotron">Make magic happen in your own kitchen.</h2>
+            </div>
+
+            <div class="jumbotron__buttons">
+                <a href="#gallery" class="button__primary button__primary--1">Find out more</a>
+                <a href="../Shop Page/dist/index.html" class="button__primary button__primary--2">Shop now!</a>
+            </div>
+
+        </section>
+
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="images/bg-video-1.mp4" type="video/mp4">
+                This video cannot be played!
+            </video>
+        </div>
+
+        <section class="info" id="info">
+
+            <div class="about">
+                <h2 class="about__header header--info">About Us</h2>
+                <p class="about__text text--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus nunc
+                    vitae egestas tempus. Aliquam erat volutpat. Mauris tincidunt, magna vel placerat mollis, eros purus suscipit
+                    est,
+                    id pellentesque nunc ipsum eget ipsum. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec convallis massa id consequat maximus.</p>
+            </div>
+            <!-- <div class="trending">
+                <h2 class="trending__header header--info">Trending Recipe</h2>
+                <p class="trending__text text--info">Donec bibendum nunc et nunc tempus, id maximus ipsum viverra. Vivamus vel
+                    lobortis
+                    libero. Vestibulum dolor urna, vulputate ut elementum vel, mattis nec ligula. Cras tincidunt neque rhoncus
+                    varius
+                    iaculis. Aliquam feugiat ex in elit volutpat, eget condimentum nulla laoreet. Maecenas vulputate blandit
+                    interdum.
+                    Quisque quis feugiat erat. In sed urna a nisl tincidunt pulvinar. Nulla facilisi.</p>
+            </div> -->
+
+
+        </section>
+
+        <section class="gallery" id="gallery">
+
+            <div class="gallery__heading">
+
+                <h1 class="header--gallery">What's Trending?</h1>
+                <p class="text--gallery">There is a story behind every food masterpiece created by OUR users, with OUR ingredients.</p>
+
+            </div>
+
+            <div class="gallery__grid">
+
+                <figure class="gallery__item gallery__item--1">
+                    <a href="#gallery__popup--1" class="button__gallery button__gallery--1">
+                        <img src="images/food_1.jpg" alt="Image 1" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <a href="#gallery__popup--2" class="button__gallery">
+                        <img src="images/food_2.jpg" alt="Image 2" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <a href="#gallery__popup--3" class="button__gallery">
+                        <img src="images/food_3.jpg" alt="Image 3" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <a href="#gallery__popup--4" class="button__gallery">
+                        <img src="images/food_4.jpg" alt="Image 4" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <a href="#gallery__popup--5" class="button__gallery">
+                        <img src="images/food_5.jpg" alt="Image 5" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <a href="#gallery__popup--6" class="button__gallery">
+                        <img src="images/food_6.jpg" alt="Image 6" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                    <a href="#gallery__popup--7" class="button__gallery">
+                        <img src="images/food_7.jpg" alt="Image 7" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                    <a href="#gallery__popup--8" class="button__gallery">
+                        <img src="images/food_8.jpg" alt="Image 8" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--9">
+                    <a href="#gallery__popup--9" class="button__gallery">
+                        <img src="images/food_9.jpg" alt="Image 9" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--10">
+                    <a href="#gallery__popup--10" class="button__gallery">
+                        <img src="images/food_10.jpg" alt="Image 10" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--11">
+                    <a href="#gallery__popup--11" class="button__gallery">
+                        <img src="images/food_11.jpg" alt="Image 11" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--12">
+                    <a href="#gallery__popup--12" class="button__gallery">
+                        <img src="images/food_12.jpg" alt="Image 12" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--13">
+                    <a href="#gallery__popup--13" class="button__gallery">
+                        <img src="images/food_13.jpg" alt="Image 13" class="gallery__image">
+                    </a>
+                </figure>
+                <figure class="gallery__item gallery__item--14">
+                    <a href="#gallery__popup--14" class="button__gallery">
+                        <img src="images/food_14.jpg" alt="Image 14" class="gallery__image">
+                    </a>
+                </figure>
+
+            </div>
+
+
+        </section>
+
+        <section class="signup" id="signup">
+
+            <div class="signup__form">
+
+                    <h2 class="signup__heading header--signup">Sign up now and receive a free order!</h1>
+
+                <form action="#" class="form">
+
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="First name" id="first-name" name="first-name" required>
+                        <label for="first-name" class="form__label">First Name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Last name" id="last-name" name="last-name" required>
+                        <label for="last-name" class="form__label">Last Name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Email Adress" id="email" required>
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+
+                    <div class="form__group form__flexbox">
+                        <button class="form__button button__form">Sign up</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="signup__paragraph text--signup">
+
+
+                <figure class="review">
+
+                    <blockquote class="review__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ornare
+                        varius. Curabitur venenatis nulla et purus congue, in venenatis nulla tincidunt. Duis tempus posuere velit in
+                        fringilla. Quisque tincidunt, nisi vitae tempor ultrices, mauris eros tincidunt neque, in posuere enim sem sit amet
+                        nulla.
+                    </blockquote>
+                    <figcaption class="review__user">
+
+                        <svg class="review__user__thumb">
+                            <use xlink:href="images/icomoon/sprite.svg#icon-like"></use>
+                        </svg>
+
+                        <div class="review__user__info">
+
+                            <img src="images/user_1.jpg" alt="User 1" class="review__user__photo">
+                            <p class="review__user__name">Jonathan Valentine</p>
+
+                        </div>
+
+                    </figcaption>
+
+                </figure>
+
+                <figure class="review">
+                    <blockquote class="review__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ornare varius. Curabitur venenatis nulla
+                        et purus congue, in venenatis nulla tincidunt. Duis tempus posuere velit in fringilla. Quisque tincidunt, nisi vitae
+                        tempor ultrices, mauris eros tincidunt neque, in posuere enim sem sit amet nulla.
+                    </blockquote>
+                    <figcaption class="review__user">
+
+                        <svg class="review__user__thumb">
+                            <use xlink:href="images/icomoon/sprite.svg#icon-like"></use>
+                        </svg>
+
+                        <div class="review__user__info">
+
+                            <img src="images/user_2.jpg" alt="User 2" class="review__user__photo">
+                            <p class="review__user__name">Amy Schulez</p>
+
+                        </div>
+                        
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <ul class="footer__nav">
+                <li class="footer__nav__item"><a href="#" class="footer__nav__link">Careers</a></li>
+                <li class="footer__nav__item"><a href="#" class="footer__nav__link">Terms</a></li>
+                <li class="footer__nav__item"><a href="#" class="footer__nav__link">Privacy Policy and Cookie Policy</a></li>
+                <li class="footer__nav__item"><a href="#" class="footer__nav__link">Help and Support</a></li>
+                <li class="footer__nav__item"><a href="#" class="footer__nav__link">Contact Us</a></li>
+            </ul>
+
+            <p class="footer__text">
+                &copy; Copyright 2019 by Hongdong Bao. Commercial uses of the project is strictly prohibited.
+            </p>
+
+        </footer>
+
+
+        <div class="gallery__popup gallery__popup--1" id="gallery__popup--1">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_1-small.jpg" alt="story user 1" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_1-small.jpg" alt="story user 1 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                    
+                        <div class="gallery__popup__header--2">
+
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--2" id="gallery__popup--2">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_2-small.jpg" alt="story user 2" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_2-small.jpg" alt="story user 2 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa
+                        lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices
+                        in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed
+                        lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus
+                        dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--3" id="gallery__popup--3">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_3-small.jpg" alt="story user 3" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_3-small.jpg" alt="story user 3 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--4" id="gallery__popup--4">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_4-small.jpg" alt="story user 4" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_4-small.jpg" alt="story user 4 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--5" id="gallery__popup--5">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_5-small.jpg" alt="story user 5" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_5-small.jpg" alt="story user 5 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--6" id="gallery__popup--6">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_6-small.jpg" alt="story user 6" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_6-small.jpg" alt="story user 6 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--7" id="gallery__popup--7">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_7-small.jpg" alt="story user 7" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_7-small.jpg" alt="story user 7 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--8" id="gallery__popup--8">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_8-small.jpg" alt="story user 8" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_8-small.jpg" alt="story user 8 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--9" id="gallery__popup--9">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_9-small.jpg" alt="story user 9" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_9-small.jpg" alt="story user 9 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--10" id="gallery__popup--10">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_10-small.jpg" alt="story user 10" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_10-small.jpg" alt="story user 10 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--11" id="gallery__popup--11">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_11-small.jpg" alt="story user 11" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_11-small.jpg" alt="story user 11 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--12" id="gallery__popup--12">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_12-small.jpg" alt="story user 12" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_12-small.jpg" alt="story user 12 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+
+        <div class="gallery__popup gallery__popup--13" id="gallery__popup--13">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_13-small.jpg" alt="story user 13" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_13-small.jpg" alt="story user 13 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery__popup gallery__popup--14" id="gallery__popup--14">
+
+            <div class="gallery__popup__content">
+
+                <figure class="gallery__popup__photo">
+                    <img src="images/story_14-small.jpg" alt="story user 14" class="gallery__popup__image">
+                </figure>
+
+                <div class="gallery__popup__writing">
+
+                    <div class="gallery__popup__header">
+
+                        <div class="gallery__popup__header--1">
+                            <h1 class="gallery__popup__heading header--gallery__popup">My Creation</h1>
+                            <figure class="gallery__popup__photo--small">
+                                <img src="images/story_14-small.jpg" alt="story user 14 small" class="gallery__popup__image--small">
+                            </figure>
+                        </div>
+                        
+                        <div class="gallery__popup__header--2">
+                        
+                            <a href="#gallery" class="gallery__popup__close">
+                                <svg class="gallery__popup__close__button">
+                                    <use xlink:href="images/icomoon/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                    <p class="gallery__popup__text text--gallery__popup">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus justo metus, nec vulputate massa lobortis et.
+                        Mauris pulvinar vehicula justo eget auctor. Curabitur pretium auctor leo, sit amet efficitur quam ultrices in. Nunc
+                        ut sapien ut ex tristique posuere. Nam nec elit sit amet quam elementum rutrum. Etiam interdum magna sed lorem
+                        gravida lobortis. Proin cursus nunc libero, nec convallis nibh vulputate eu. Suspendisse hendrerit luctus dui, at
+                        sodales velit maximus eget.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+</html> 

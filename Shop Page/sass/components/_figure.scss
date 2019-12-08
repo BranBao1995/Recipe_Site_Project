@@ -1,0 +1,81 @@
+
+.review {
+
+    background-color: white;
+    width: 75%;
+    padding: 3rem;
+
+    display: grid;
+
+    grid-template-rows: repeat(2, max-content);
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        &:last-child {
+
+            margin-top: -4rem;
+
+        }
+
+    }
+
+    &__text {
+
+        line-height: 1.5;
+
+    }
+
+    &__user {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 2rem;
+
+        @media only screen and (max-width: $breakpoint-large) {
+
+            display: flex;
+            align-items: center;
+
+        margin-top: 2rem;
+
+        }
+
+        &__photo {
+
+            width: 6rem;
+            height: 6rem;
+            margin-right: 1rem;
+
+            border-radius: 50rem;
+
+            display: block;
+
+        }
+
+        &__thumb {
+
+            width: 5rem;
+            height: 5rem;
+
+            display: block;
+
+            @media only screen and (max-width: $breakpoint-large) {
+
+                display: none;
+    
+            }
+
+        }
+
+        &__info {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+
+}
